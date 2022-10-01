@@ -1,17 +1,27 @@
-# render_studio
 
-A new Flutter project.
+# Render
 
-## Getting Started
+Render Studio is the ultimate graphics design app for creating content for social media that takes Flutter's capabilities to its extreme level utilizing various techniques to create an unmatched architecture that runs smoothly on multiple platforms and devices.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+ - Written in Flutter and powered by Firebase
+ - Material 3
+ - Clean Architecture
+ - Highly Scalable Code
+ - Generate Images in High Quality
+ - Easy-to-use UI
+ - Support Templates
+ - Highly Customisable Widgets
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# render-studio
+
+## Screenshots
+
+
+<img src="https://github.com/rehmatsg/render-studio/blob/main/promos/1.png?raw=true" alt="Home" width="200"/>
+<img src="https://github.com/rehmatsg/render-studio/blob/main/promos/2.png?raw=true" alt="Dark Mode" width="200"/>
+<img src="https://github.com/rehmatsg/render-studio/blob/main/promos/3.png?raw=true" alt="Create Project" width="200"/>
+<img src="https://github.com/rehmatsg/render-studio/blob/main/promos/4.png?raw=true" alt="Choose Size" width="200"/>
+<img src="https://github.com/rehmatsg/render-studio/blob/main/promos/6.png?raw=true" alt="Editor Page (Summers Are Cool)" width="200"/>
+<img src="https://github.com/rehmatsg/render-studio/blob/main/promos/7.png?raw=true" alt="Editor Page" width="200"/>
