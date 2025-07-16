@@ -8,7 +8,7 @@ abstract class Palette {
   static bool isDark(BuildContext context) => Theme.of(context).brightness == Brightness.dark;
 
   /// Material color for use in BackdropFilter elements
-  static Color blurBackground(BuildContext context) => of(context).surfaceContainerLow.withOpacity(0.4);
+  static Color blurBackground(BuildContext context) => of(context).surfaceContainerLow.withValues(alpha: 0.4);
 
   static Color onBlurBackground(BuildContext context) => isDark(context) ? Colors.white : Colors.black;
 

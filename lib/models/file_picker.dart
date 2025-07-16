@@ -189,7 +189,7 @@ class FilePicker {
       backgroundColor: Palette.of(context).surface,
       cropFrameColor: Palette.of(context).primary,
       cropGridColor: Palette.of(context).onPrimaryContainer,
-      dimmedLayerColor: Palette.of(context).surfaceContainerLow.withOpacity(0.5),
+      dimmedLayerColor: Palette.of(context).surfaceContainerLow.withValues(alpha: 0.5),
       showCropGrid: true,
       activeControlsWidgetColor: Palette.of(context).primary,
       toolbarColor: Theme.of(context).appBarTheme.backgroundColor,

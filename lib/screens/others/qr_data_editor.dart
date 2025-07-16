@@ -64,7 +64,7 @@ class _QRCodeDataEditorState extends State<QRCodeDataEditor> {
               TextFormField(
                 controller: textCtrl,
                 decoration: InputDecoration(
-                  // fillColor: Theme.of(context).colorScheme.surface.withOpacity(0.9),
+                  // fillColor: Theme.of(context).colorScheme.surface.withValues(alpha: 0.9),
                   label: Text(type.name),
                   prefix: prefix != null ? Text(prefix!) : null
                 ),

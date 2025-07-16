@@ -37,7 +37,7 @@ class App {
     // MobileAds.instance.initialize();
 
     // Add Rehmat's iPhone for testing
-    // RequestConfiguration configuration = RequestConfiguration(testDeviceIds: ['6c8a2f17950b8ca93295b564b7439715']);
+    // RequestConfiguration configuration = RequestConfiguration(testDeviceIds: ['****************************']);
     // MobileAds.instance.updateRequestConfiguration(configuration);
 
     await Hive.initFlutter();

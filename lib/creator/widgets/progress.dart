@@ -21,7 +21,7 @@ class CreativeProgressWidget extends CreatorWidget {
   @override
   void onInitialize() {
     foregroundColor = page.palette.primary;
-    backgroundColor = page.palette.primary.withOpacity(0.2);
+    backgroundColor = page.palette.primary.withValues(alpha: 0.2);
     super.onInitialize();
   }
 
@@ -296,15 +296,13 @@ class CreativeProgressWidget extends CreatorWidget {
           barRadius: corners == StrokeCap.round ? Radius.circular(strokeWidth / 2) : Radius.zero,
           padding: EdgeInsets.zero,
         );
-      default:
-        return Container();
     }
   }
 
   @override
   void onPaletteUpdate() {
     foregroundColor = page.palette.primary;
-    backgroundColor = page.palette.primary.withOpacity(0.2);
+    backgroundColor = page.palette.primary.withValues(alpha: 0.2);
     super.onPaletteUpdate();
   }
 

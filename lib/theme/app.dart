@@ -50,7 +50,7 @@ class AppTheme {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(12)),
           side: BorderSide(
-            color: colorScheme.onSurfaceVariant.withOpacity(0.2),
+            color: colorScheme.onSurfaceVariant.withValues(alpha: 0.2),
             width: 0
           )
         ),
@@ -61,7 +61,7 @@ class AppTheme {
         enableFeedback: true,
         elevation: 0
       ),
-      dialogTheme: DialogTheme(
+      dialogTheme: DialogThemeData(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20)
         ),
@@ -108,7 +108,7 @@ class AppTheme {
               return colorScheme!.surfaceContainerLow;
             }
             if (states.contains(WidgetState.disabled)) {
-              return colorScheme!.onSurfaceVariant.withOpacity(0.2);
+              return colorScheme!.onSurfaceVariant.withValues(alpha: 0.2);
             }
             return colorScheme!.surface;
           }),
@@ -117,7 +117,7 @@ class AppTheme {
               return colorScheme!.onSurfaceVariant;
             }
             if (states.contains(WidgetState.disabled)) {
-              return colorScheme!.onSurfaceVariant.withOpacity(0.2);
+              return colorScheme!.onSurfaceVariant.withValues(alpha: 0.2);
             }
             return colorScheme!.onSurface;
           }),
@@ -234,9 +234,9 @@ class AppTheme {
       progressIndicatorTheme: ProgressIndicatorThemeData(
         linearMinHeight: 4,
         color: contrastTextColorLight,
-        linearTrackColor: contrastTextColorLight.withOpacity(0.05)
+        linearTrackColor: contrastTextColorLight.withValues(alpha: 0.05)
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: surfaceVariant,
         elevation: 0,
         margin: EdgeInsets.zero,
@@ -261,28 +261,28 @@ class AppTheme {
         enabledBorder: CustomOutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
           borderSide: BorderSide(
-            color: colorScheme.onSurfaceVariant.withOpacity(0.05),
+            color: colorScheme.onSurfaceVariant.withValues(alpha: 0.05),
             width: 1.5
           )
         ),
         focusedBorder: CustomOutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
           borderSide: BorderSide(
-            color: colorScheme.onSurfaceVariant.withOpacity(0.2),
+            color: colorScheme.onSurfaceVariant.withValues(alpha: 0.2),
             width: 1.5
           )
         ),
         errorBorder: CustomOutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
           borderSide: BorderSide(
-            color: colorScheme.error.withOpacity(0.05),
+            color: colorScheme.error.withValues(alpha: 0.05),
             width: 1.5
           )
         ),
         focusedErrorBorder: CustomOutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
           borderSide: BorderSide(
-            color: colorScheme.error.withOpacity(0.2),
+            color: colorScheme.error.withValues(alpha: 0.2),
             width: 1.5
           )
         ),
@@ -309,7 +309,7 @@ class AppTheme {
         ),
       ),
       sliderTheme: SliderThemeData(
-        showValueIndicator: ShowValueIndicator.always,
+        showValueIndicator: ShowValueIndicator.alwaysVisible,
         trackHeight: 1,
         activeTrackColor: colorScheme.onSurface,
         thumbColor: colorScheme.onSurfaceVariant,

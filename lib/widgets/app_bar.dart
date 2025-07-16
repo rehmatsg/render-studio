@@ -682,7 +682,7 @@ class _RenderFlexibleSpaceBarState extends State<RenderFlexibleSpaceBar> {
             TextStyle titleStyle = theme.textTheme.titleLarge!;
             titleStyle = titleStyle.copyWith(
               fontWeight: FontWeight.w600,
-              color: titleStyle.color!.withOpacity(opacity)
+              color: titleStyle.color!.withValues(alpha: opacity)
             );
             final bool effectiveCenterTitle = _getEffectiveCenterTitle(theme);
             final padding = widget.titlePadding ?? widget.titlePaddingTween?.transform(t) ?? EdgeInsetsDirectional.only(

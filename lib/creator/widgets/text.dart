@@ -291,11 +291,11 @@ class CreatorText extends CreatorWidget {
           title: 'Lifted',
           tooltip: 'Add a lifted effect to text',
           onTap: (context) async {
-            if ((shadows?.length ?? 0) == 1 && shadows!.first.offset == Offset(0, 0) && shadows!.first.blurRadius == 30 && shadows!.first.color == Colors.black.withOpacity(0.5)) {
+            if ((shadows?.length ?? 0) == 1 && shadows!.first.offset == Offset(0, 0) && shadows!.first.blurRadius == 30 && shadows!.first.color == Colors.black.withValues(alpha: 0.5)) {
               shadows = null;
             } else shadows = [
               BoxShadow(
-                color: Colors.black.withOpacity(0.5),
+                color: Colors.black.withValues(alpha: 0.5),
                 blurRadius: 30,
                 spreadRadius: 30,
                 offset: Offset(0, 0)
@@ -309,11 +309,11 @@ class CreatorText extends CreatorWidget {
           title: 'Drop Shadow',
           tooltip: 'Add a drop shadow to text',
           onTap: (context) async {
-            if ((shadows?.length ?? 0) == 1 && shadows!.first.offset == Offset(0, 3) && shadows!.first.blurRadius == 1 && shadows!.first.color == Colors.black.withOpacity(0.2)) {
+            if ((shadows?.length ?? 0) == 1 && shadows!.first.offset == Offset(0, 3) && shadows!.first.blurRadius == 1 && shadows!.first.color == Colors.black.withValues(alpha: 0.2)) {
               shadows = null;
             } else shadows = [
               BoxShadow(
-                color: Colors.black.withOpacity(0.2),
+                color: Colors.black.withValues(alpha: 0.2),
                 blurRadius: 1,
                 offset: Offset(0, 3)
               )
@@ -332,12 +332,12 @@ class CreatorText extends CreatorWidget {
               secondaryStyle = null;
               shadows = [
                 BoxShadow(
-                  color: primaryStyle.color.withOpacity(0.4),
+                  color: primaryStyle.color.withValues(alpha: 0.4),
                   blurRadius: 2,
                   offset: Offset(5, 5)
                 ),
                 BoxShadow(
-                  color: primaryStyle.color.withOpacity(0.2),
+                  color: primaryStyle.color.withValues(alpha: 0.2),
                   blurRadius: 4,
                   offset: Offset(10, 10)
                 ),
@@ -359,7 +359,7 @@ class CreatorText extends CreatorWidget {
         //       if (primaryStyle.stroke == null) primaryStyle.addStroke();
         //       shadows = [
         //         BoxShadow(
-        //           color: primaryStyle.color.withOpacity(0.4),
+        //           color: primaryStyle.color.withValues(alpha: 0.4),
         //           blurRadius: 2,
         //           offset: Offset(5, 5)
         //         ),

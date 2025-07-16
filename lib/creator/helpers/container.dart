@@ -92,7 +92,7 @@ class CreativeContainerProvider {
         onTap: (context) async {
           if (shadow == null) {
             shadow = BoxShadow(
-              color: Colors.black.withOpacity(0.5),
+              color: Colors.black.withValues(alpha: 0.5),
               blurRadius: 5,
               offset: Offset(0, 5)
             );

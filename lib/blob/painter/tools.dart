@@ -31,7 +31,7 @@ label(Canvas canvas, String text, Offset offset) {
 
 line(Canvas canvas, Offset start, Offset end) {
   var paint = Paint()
-    ..color = Color(0xff596275).withOpacity(0.5)
+    ..color = Color(0xff596275).withValues(alpha: 0.5)
     ..strokeWidth = 3
     ..style = PaintingStyle.stroke
     ..strokeCap = StrokeCap.round;
@@ -83,6 +83,6 @@ Path connectPoints(BlobCurves curves) {
 
 void drawBlob(Canvas canvas, Path path, BlobStyles? styles) {
   Paint paint = createPaint(styles);
-  // canvas.drawShadow(path, Colors.red.withOpacity(0.8), 10, true);
+  // canvas.drawShadow(path, Colors.red.withValues(alpha: 0.8), 10, true);
   canvas.drawPath(path, paint);
 }

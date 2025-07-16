@@ -46,8 +46,6 @@ extension ExportQualityExtension on ExportQuality {
         return '2x';
       case ExportQuality.fourx:
         return '4x';
-      default:
-        return '1x';
     }
   }
 

@@ -66,7 +66,7 @@ class _EditorState extends State<Editor> with TickerProviderStateMixin {
         color: Palette.of(context).surface,
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.1),
+            color: Colors.black.withValues(alpha: 0.1),
             blurRadius: 2,
           )
         ],
@@ -92,7 +92,7 @@ class _EditorState extends State<Editor> with TickerProviderStateMixin {
                       indicatorColor: Constants.getThemedBlackAndWhite(context),
                       labelColor: Constants.getThemedBlackAndWhite(context),
                       indicator: creatorWidget.tabs.length > 1 ? null : const BoxDecoration(),
-                      unselectedLabelColor: Constants.getThemedBlackAndWhite(context).withOpacity(0.5),
+                      unselectedLabelColor: Constants.getThemedBlackAndWhite(context).withValues(alpha: 0.5),
                       isScrollable: true,
                       labelStyle: Theme.of(context).textTheme.titleSmall,
                       tabs: List.generate(
@@ -120,7 +120,7 @@ class _EditorState extends State<Editor> with TickerProviderStateMixin {
                       decoration: BoxDecoration(
                         boxShadow: [
                           BoxShadow(
-                            color: Palette.of(context).surface.withOpacity(1),
+                            color: Palette.of(context).surface.withValues(alpha: 1),
                             blurRadius: 10,
                             spreadRadius: 10,
                           )
@@ -1165,7 +1165,7 @@ class __ShadowEditorState<T> extends State<_ShadowEditor<T>> {
               Text(
                 'Color',
                 style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                  color: Theme.of(context).colorScheme.onSurface.withOpacity(0.5)
+                  color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.5)
                 ),
               ),
               SizedBox(width: 12),
@@ -1173,7 +1173,7 @@ class __ShadowEditorState<T> extends State<_ShadowEditor<T>> {
                 widget: widget.widget,
                 onColorSelect: (color) {
                   this.opacity = color.opacity;
-                  this.color = color.withOpacity(1);
+                  this.color = color.withValues(alpha: 1);
                   onChange();
                 },
                 reverseOrder: true,
@@ -1233,14 +1233,14 @@ class __ShadowEditorState<T> extends State<_ShadowEditor<T>> {
   void onChange() {
     if (shadow.runtimeType == BoxShadow) {
       shadow = BoxShadow(
-        color: color.withOpacity(opacity),
+        color: color.withValues(alpha: opacity),
         offset: getOffset(),
         blurRadius: blur,
         spreadRadius: spread,
       ) as T;
     } else if (shadow.runtimeType == Shadow) {
       shadow = Shadow(
-        color: color.withOpacity(opacity),
+        color: color.withValues(alpha: opacity),
         offset: getOffset(),
         blurRadius: blur,
       ) as T;

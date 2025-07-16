@@ -38,7 +38,7 @@ class TemplateGlance extends StatelessWidget {
               cornerRadius: 20
             ),
             border: Border.all(
-              color: Palette.of(context).onSurface.withOpacity(isSelected ? 1 : 0),
+              color: Palette.of(context).onSurface.withValues(alpha: isSelected ? 1 : 0),
               width: 2
             )
           ),

@@ -467,7 +467,7 @@ class __MultiselectDragOverlayState extends State<_MultiselectDragOverlay> {
                   height: (_selectorStart!.dy - _selectorEnd!.dy).abs(),
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Palette.of(context).primary.harmonizeWith(widgets.page.palette.background).withOpacity(0.2),
+                      color: Palette.of(context).primary.harmonizeWith(widgets.page.palette.background).withValues(alpha: 0.2),
                       border: Border.all(
                         color: Palette.of(context).primary,
                         width: 1,
@@ -486,7 +486,7 @@ class __MultiselectDragOverlayState extends State<_MultiselectDragOverlay> {
               //     height: widget.area.height,
               //     child: Container(
               //       decoration: BoxDecoration(
-              //         color: Palette.of(context).primary.harmonizeWith(widgets.page.palette.background).withOpacity(0.2),
+              //         color: Palette.of(context).primary.harmonizeWith(widgets.page.palette.background).withValues(alpha: 0.2),
               //         border: Border.all(
               //           color: Palette.of(context).primary,
               //           width: 1,

@@ -41,9 +41,9 @@ class _FilledIconButtonState extends State<FilledIconButton> {
       style: IconButton.styleFrom(
         foregroundColor: widget.selected ? colors.onPrimary : colors.primary,
         backgroundColor: widget.selected ? colors.primary : colors.surfaceContainerLow,
-        hoverColor: widget.selected ? colors.onPrimary.withOpacity(0.08) : colors.primary.withOpacity(0.08),
-        focusColor: widget.selected ? colors.onPrimary.withOpacity(0.12) : colors.primary.withOpacity(0.12),
-        highlightColor: widget.selected ? colors.onPrimary.withOpacity(0.12) : colors.primary.withOpacity(0.12),
+        hoverColor: widget.selected ? colors.onPrimary.withValues(alpha: 0.08) : colors.primary.withValues(alpha: 0.08),
+        focusColor: widget.selected ? colors.onPrimary.withValues(alpha: 0.12) : colors.primary.withValues(alpha: 0.12),
+        highlightColor: widget.selected ? colors.onPrimary.withValues(alpha: 0.12) : colors.primary.withValues(alpha: 0.12),
       )
     );
   }
@@ -92,9 +92,9 @@ class _FilledTonalIconButtonState extends State<FilledTonalIconButton> {
       style: IconButton.styleFrom(
         foregroundColor: widget.selected ? colors.onPrimaryContainer : (widget.secondary ? colors.onSurface : colors.onSurfaceVariant),
         backgroundColor: widget.selected ? colors.primaryContainer : (widget.secondary ? colors.surface : colors.surfaceContainerLow),
-        hoverColor: (widget.selected ? colors.onPrimaryContainer : (widget.secondary ? colors.onSurface : colors.onSurfaceVariant).withOpacity(0.08)).withOpacity(0.08),
-        focusColor: (widget.selected ? colors.onPrimaryContainer : (widget.secondary ? colors.onSurface : colors.onSurfaceVariant).withOpacity(0.08)).withOpacity(0.08),
-        highlightColor: (widget.selected ? colors.onPrimaryContainer : (widget.secondary ? colors.onSurface : colors.onSurfaceVariant).withOpacity(0.08)).withOpacity(0.08),
+        hoverColor: (widget.selected ? colors.onPrimaryContainer : (widget.secondary ? colors.onSurface : colors.onSurfaceVariant).withValues(alpha: 0.08)).withValues(alpha: 0.08),
+        focusColor: (widget.selected ? colors.onPrimaryContainer : (widget.secondary ? colors.onSurface : colors.onSurfaceVariant).withValues(alpha: 0.08)).withValues(alpha: 0.08),
+        highlightColor: (widget.selected ? colors.onPrimaryContainer : (widget.secondary ? colors.onSurface : colors.onSurfaceVariant).withValues(alpha: 0.08)).withValues(alpha: 0.08),
       ),
     );
   }
@@ -137,9 +137,9 @@ class _OutlinedIconButtonsState extends State<OutlinedIconButtons> {
       tooltip: widget.tooltip,
       style: IconButton.styleFrom(
         backgroundColor: widget.selected ? colors.inverseSurface : null,
-        hoverColor: widget.selected ? colors.onInverseSurface.withOpacity(0.08) : colors.onSurfaceVariant.withOpacity(0.08),
-        focusColor: widget.selected ? colors.onInverseSurface.withOpacity(0.12) : colors.onSurfaceVariant.withOpacity(0.12),
-        highlightColor: widget.selected ? colors.onInverseSurface.withOpacity(0.12) : colors.onSurface.withOpacity(0.12),
+        hoverColor: widget.selected ? colors.onInverseSurface.withValues(alpha: 0.08) : colors.onSurfaceVariant.withValues(alpha: 0.08),
+        focusColor: widget.selected ? colors.onInverseSurface.withValues(alpha: 0.12) : colors.onSurfaceVariant.withValues(alpha: 0.12),
+        highlightColor: widget.selected ? colors.onInverseSurface.withValues(alpha: 0.12) : colors.onSurface.withValues(alpha: 0.12),
         side: BorderSide(
           color: colors.outline,
           width: 0
@@ -288,7 +288,7 @@ class _ColorSelectorState extends State<ColorSelector> {
             ),
             boxShadow: [
               BoxShadow(
-                color: color.withOpacity(0.5),
+                color: color.withValues(alpha: 0.5),
                 blurRadius: 5,
                 spreadRadius: 1,
                 offset: Offset(0, 2)
@@ -425,7 +425,7 @@ class _ButtonWithIconState extends State<ButtonWithIcon> {
                     borderRadius: BorderRadius.circular(widget.borderRadius),
                     // boxShadow: [
                     //   BoxShadow(
-                    //     color: Colors.black.withOpacity(0.1),
+                    //     color: Colors.black.withValues(alpha: 0.1),
                     //     blurRadius: 2,
                     //     offset: Offset(0, 1)
                     //   )
@@ -604,7 +604,7 @@ class _DragHandlerState extends State<DragHandler> {
           borderRadius: BorderRadius.circular(40),
           boxShadow: [
             BoxShadow(
-              color: (widget.iconColor ?? Palette.of(context).onSurface).withOpacity(0.1),
+              color: (widget.iconColor ?? Palette.of(context).onSurface).withValues(alpha: 0.1),
               blurRadius: 5,
               spreadRadius: 1,
             )

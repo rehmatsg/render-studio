@@ -86,7 +86,7 @@ class _ProjectAtGlanceModalState extends State<ProjectAtGlanceModal> {
                             height: MediaQuery.of(context).size.width,
                             child: Container(
                               decoration: BoxDecoration(
-                                color: Palette.of(context).surface.withOpacity(0.8),
+                                color: Palette.of(context).surface.withValues(alpha: 0.8),
                                 borderRadius: BorderRadius.circular(12),
                               ),
                               child: Icon(
@@ -369,7 +369,7 @@ class ProjectGlanceCard extends StatelessWidget {
           color: context.isDarkMode ? Palette.of(context).surfaceContainerLow : Palette.of(context).surface,
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.1),
+              color: Colors.black.withValues(alpha: 0.1),
               offset: Offset(0, 1),
               blurRadius: 2
             )

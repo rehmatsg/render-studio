@@ -35,7 +35,7 @@ class Spinner extends StatefulWidget {
         child: Container(
           height: double.infinity,
           width: double.infinity,
-          color: Palette.of(context).surface.withOpacity(0.25),
+          color: Palette.of(context).surface.withValues(alpha: 0.25),
           child: Center(
             child: SmoothContainer(
               color: Palette.of(context).surface,

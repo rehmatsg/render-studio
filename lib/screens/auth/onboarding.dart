@@ -43,7 +43,7 @@ class _OnboardingState extends State<Onboarding> {
                         return LinearGradient(
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
-                          colors: [Colors.black, Colors.black.withOpacity(0)],
+                          colors: [Colors.black, Colors.black.withValues(alpha: 0)],
                           stops: [0.4, 0.65]
                         ).createShader(rect);
                       },

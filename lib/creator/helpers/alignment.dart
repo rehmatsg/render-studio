@@ -43,7 +43,6 @@ extension WidgetAlignmentExtension on WidgetAlignment {
       case WidgetAlignment.middle:
         dy = 0;
         break;
-      default:
     }
     return Offset(dx, dy);
   }

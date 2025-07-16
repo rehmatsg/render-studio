@@ -1208,7 +1208,7 @@ class _SelectedWidgetHighlighter extends StatelessWidget {
               // boxShadow: [
               //   if (!isLightBackground) BoxShadow(
               //     blurStyle: BlurStyle.outer,
-              //     color: Colors.black.withOpacity(0.1),
+              //     color: Colors.black.withValues(alpha: 0.1),
               //     blurRadius: 5,
               //     spreadRadius: 0,
               //   )

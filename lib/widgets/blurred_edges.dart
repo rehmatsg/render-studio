@@ -76,18 +76,18 @@ class _BlurredEdgesViewState extends State<BlurredEdgesView> {
   Color get initialColor {
     double scrolled = controller.position.extentBefore;
     if (scrolled < widget.blurLength) {
-      return color.withOpacity(1 - scrolled / widget.blurLength);
+      return color.withValues(alpha: 1 - scrolled / widget.blurLength);
     } else {
-      return color.withOpacity(0);
+      return color.withValues(alpha: 0);
     }
   }
 
   Color get finalColor {
     double scrolled = controller.position.extentAfter;
     if (scrolled < widget.blurLength) {
-      return color.withOpacity(1 - scrolled / widget.blurLength);
+      return color.withValues(alpha: 1 - scrolled / widget.blurLength);
     } else {
-      return color.withOpacity(0);
+      return color.withValues(alpha: 0);
     }
   }
 

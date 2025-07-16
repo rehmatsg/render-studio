@@ -597,7 +597,6 @@ class BackgroundWidget extends CreatorWidget {
         gradient = null;
         isVariableWidget = page.project.isTemplateKit;
         break;
-      default:
     }
     type = _type;
     updateListeners(WidgetChange.misc);

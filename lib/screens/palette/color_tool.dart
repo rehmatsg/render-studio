@@ -152,7 +152,7 @@ class _ColorToolState extends State<ColorTool> {
 //       decoration: BoxDecoration(
 //         boxShadow: [
 //           BoxShadow(
-//             color: _color.withOpacity(Palette.isDark(context) ? 0.1 : 0.2),
+//             color: _color.withValues(alpha: Palette.isDark(context) ? 0.1 : 0.2),
 //             blurRadius: 200,
 //             spreadRadius: 150,
 //           ),
@@ -207,7 +207,7 @@ class _ColorToolState extends State<ColorTool> {
 //                 borderRadius: BorderRadius.circular(50),
 //                 boxShadow: [
 //                   BoxShadow(
-//                     color: widget.palette!.colors[index].withOpacity(0.2),
+//                     color: widget.palette!.colors[index].withValues(alpha: 0.2),
 //                     blurRadius: 20,
 //                     spreadRadius: 10,
 //                   ),
@@ -366,7 +366,7 @@ class _ColorEditorTabState extends State<ColorEditorTab> {
                         color: colors[index],
                         borderRadius: BorderRadius.circular(30),
                         border: Border.all(
-                          color: Theme.of(context).colorScheme.onSurface.withOpacity(0.2),
+                          color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.2),
                           width: 0
                         )
                       ),
@@ -401,7 +401,7 @@ class _ColorEditorTabState extends State<ColorEditorTab> {
                   min: 0,
                   max: 1,
                   onChanged: (opacity) {
-                    onChange(color.withOpacity(opacity));
+                    onChange(color.withValues(alpha: opacity));
                   },
                 ),
               ),

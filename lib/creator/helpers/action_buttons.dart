@@ -37,7 +37,7 @@ class _WidgetActionButtonState extends State<WidgetActionButton> {
               borderRadius: BorderRadius.circular(40),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.2),
+                  color: Colors.black.withValues(alpha: 0.2),
                   blurRadius: 5,
                   spreadRadius: 1,
                 )

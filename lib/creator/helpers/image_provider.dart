@@ -387,7 +387,7 @@ class CreativeImageProvider {
                     return LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
-                      colors: [Colors.black, Colors.black.withOpacity(0)],
+                      colors: [Colors.black, Colors.black.withValues(alpha: 0)],
                       stops: [0.4, 0.75]
                     ).createShader(rect);
                   },
@@ -434,12 +434,12 @@ class CreativeImageProvider {
           child: Stack(
             children: [
               Container(
-                // color: page.background.color.withOpacity(0.5),
+                // color: page.background.color.withValues(alpha: 0.5),
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
-                      widget.page.palette.background.withAlpha(180).withOpacity(0.5),
-                      widget.page.palette.background.withOpacity(0.5),
+                      widget.page.palette.background.withAlpha(180).withValues(alpha: 0.5),
+                      widget.page.palette.background.withValues(alpha: 0.5),
                     ]
                   )
                 ),

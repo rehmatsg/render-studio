@@ -43,7 +43,7 @@ class _TextIconButtonState extends State<TextIconButton> {
           borderRadius: Constants.borderRadius,
           color: widget.color ?? Palette.of(context).surfaceContainerLow,
           border: Border.all(
-            color: Palette.of(context).onSurfaceVariant.withOpacity(0.2),
+            color: Palette.of(context).onSurfaceVariant.withValues(alpha: 0.2),
             width: 0
           )
         ),
@@ -346,10 +346,10 @@ class RawButtonState extends State<RawButton> {
               borderRadius: BorderRadius.circular(widget.borderRadius),
               smoothness: 0.6,
               side: widget.border?.copyWith(
-                color: widget.border?.color.withOpacity(widget.disabled ? 0.5 : 1)
+                color: widget.border?.color.withValues(alpha: widget.disabled ? 0.5 : 1)
               ) ?? BorderSide.none
             ),
-            color: widget.backgroundColor.opacity == 0 ? widget.backgroundColor : widget.backgroundColor.withOpacity(widget.disabled ? 0.5 : 1),
+            color: widget.backgroundColor.a == 0 ? widget.backgroundColor : widget.backgroundColor.withValues(alpha: widget.disabled ? 0.5 : 1),
           ),
           padding: widget.padding,
           child: DefaultTextStyle(

@@ -161,7 +161,7 @@ class Alerts {
                       width: 50,
                       height: 5,
                       decoration: BoxDecoration(
-                        color: Palette.isDark(context) ? Colors.grey[800] : Colors.grey.withOpacity(0.3),
+                        color: Palette.isDark(context) ? Colors.grey[800] : Colors.grey.withValues(alpha: 0.3),
                         borderRadius: BorderRadius.circular(5),
                       ),
                     )
@@ -283,7 +283,7 @@ class Alerts {
       showDragHandle: false,
       useSafeArea: true,
       backgroundColor: Colors.transparent,
-      barrierColor: Colors.black.withOpacity(0.5),
+      barrierColor: Colors.black.withValues(alpha: 0.5),
       isScrollControlled: true,
       builder: (context) => ProAnimatedBlur(
         blur: 20,
@@ -296,7 +296,7 @@ class Alerts {
                 left: 12,
                 right: 12,
               ),
-              color: Palette.of(context).surface.withOpacity(0.9),
+              color: Palette.of(context).surface.withValues(alpha: 0.9),
               borderRadius: BorderRadius.circular(
                 Constants.deviceCornerRadius - 12
               ),
@@ -463,7 +463,7 @@ class Alerts {
     ),
     barrierDismissible: isDismissible,
     barrierLabel: 'Dismiss',
-    barrierColor: Palette.of(context).surface.withOpacity(opacity),
+    barrierColor: Palette.of(context).surface.withValues(alpha: opacity),
     transitionDuration: Duration(milliseconds: 250),
     transitionBuilder: (context, animation, animation2, child) => BackdropFilter(
       filter: ImageFilter.blur(sigmaX: 20 * animation.value, sigmaY: 20 * animation.value),
@@ -564,7 +564,7 @@ class Alerts {
           child: Container(
             height: double.infinity,
             width: double.infinity,
-            color: Palette.of(context).surface.withOpacity(0.5),
+            color: Palette.of(context).surface.withValues(alpha: 0.5),
             child: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,

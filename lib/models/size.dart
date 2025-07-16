@@ -72,8 +72,6 @@ extension PostSizePresetsExtension on PostSizePresets {
         return const Size(1200, 628);
       case PostSizePresets.snapchatStory:
         return const Size(1080, 1920);
-      default:
-        return const Size(1920, 1080);
     }
   }
 
@@ -103,8 +101,6 @@ extension PostSizePresetsExtension on PostSizePresets {
         return 'LinkedIn Mobile Project';
       case PostSizePresets.snapchatStory:
         return 'Snapchat Story';
-      default:
-        return 'Rectangle';
     }
   }
 
@@ -134,8 +130,6 @@ extension PostSizePresetsExtension on PostSizePresets {
         return FontAwesomeIcons.linkedinIn;
       case PostSizePresets.snapchatStory:
         return FontAwesomeIcons.snapchat;
-      default:
-        return RenderIcons.error;
     }
   }
 
@@ -165,8 +159,6 @@ extension PostSizePresetsExtension on PostSizePresets {
         return 'linkedin-post-mobile';
       case PostSizePresets.snapchatStory:
         return 'snapchat-story';
-      default:
-        return 'rectangle';
     }
   }
 

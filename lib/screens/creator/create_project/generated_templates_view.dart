@@ -93,7 +93,7 @@ class _GeneratedTemplatesViewState extends State<GeneratedTemplatesView> {
           color: Palette.of(context).surfaceContainerLow,
           border: Border(
             top: BorderSide(
-              color: Palette.of(context).onSurface.withOpacity(0.1),
+              color: Palette.of(context).onSurface.withValues(alpha: 0.1),
               width: 0.5
             )
           )

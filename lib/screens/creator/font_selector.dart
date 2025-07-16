@@ -233,7 +233,7 @@ class _FontPreviewBuilder extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
             color: Palette.of(context).surfaceContainerLow,
             border: Border.all(
-              color: Palette.of(context).outline.withOpacity(0.1)
+              color: Palette.of(context).outline.withValues(alpha: 0.1)
             )
           ),
           child: Column(

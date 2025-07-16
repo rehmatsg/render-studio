@@ -70,12 +70,6 @@ extension ResizeHandlerProperties on ResizeHandler {
           right: 0,
           child: child
         );
-      default:
-        return Positioned(
-          top: 0,
-          left: 0,
-          child: child
-        );
     }
   }
 
@@ -97,8 +91,6 @@ extension ResizeHandlerProperties on ResizeHandler {
         return const Size(20, 5);
       case ResizeHandler.bottomRight:
         return const Size(17, 17);
-      default:
-        return const Size(0, 0);
     }
   }
 
@@ -120,8 +112,6 @@ extension ResizeHandlerProperties on ResizeHandler {
         return const Size(30, 8);
       case ResizeHandler.bottomRight:
         return const Size(30, 30);
-      default:
-        return const Size(0, 0);
     }
   }
 
@@ -189,8 +179,6 @@ extension ResizeHandlerProperties on ResizeHandler {
           return _size;
         }
         return widget.size;
-      default:
-        return null;
     }
   }
 
@@ -222,8 +210,6 @@ extension ResizeHandlerProperties on ResizeHandler {
         return ResizeHandlerType.center;
       case ResizeHandler.bottomRight:
         return ResizeHandlerType.corner;
-      default:
-        return ResizeHandlerType.center;
     }
   }
 
@@ -245,8 +231,6 @@ extension ResizeHandlerProperties on ResizeHandler {
         return SystemMouseCursors.resizeDown;
       case ResizeHandler.bottomRight:
         return SystemMouseCursors.resizeDownRight;
-      default:
-        return SystemMouseCursors.basic;
     }
   }
 
@@ -269,9 +253,7 @@ extension ResizeHandlerProperties on ResizeHandler {
         return Alignment.topCenter;
       case ResizeHandler.bottomRight:
         return Alignment.topLeft;
-      default:
-        return Alignment.center;
-    }
+      }
   }
 
 }
@@ -362,7 +344,7 @@ class _ResizeHandlerBallState extends State<ResizeHandlerBall> {
                       ) : null,
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.2),
+                          color: Colors.black.withValues(alpha: 0.2),
                           blurRadius: 1,
                           spreadRadius: 0,
                           offset: const Offset(0, 0)
